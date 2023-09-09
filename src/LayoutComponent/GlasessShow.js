@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 export default class GlasessShow extends Component {
     renderGlass = () => { 
-        let {showGlass} = this.props
-        return showGlass.map((item,index) => { 
+        // let {showGlass} = this.props
+        return this.props.showGlass.map((item,index) => { 
             let {name,url,desc} = item
             return (
                 <div key={index}>
