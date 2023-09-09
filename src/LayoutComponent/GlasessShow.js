@@ -18,7 +18,7 @@ export default class GlasessShow extends Component {
      }
   render() {
     return (
-      <div style={{margin:"auto",width:"185px",position:"absolute",bottom:"140px",position:"absolute",left:"24%"}}>
+      <div style={{margin:"auto",width:"185px",position:"absolute",bottom:"140px",position:"absolute",left:"34%"}}>
             {this.renderGlass()}
       </div>
     )

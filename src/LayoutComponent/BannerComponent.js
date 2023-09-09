@@ -9,15 +9,6 @@ export default class BannerComponent extends Component {
         GlassesArr1 : GlassesErr,
         GlassesShow :[]
     }
-    // renderListGlasses = () => { 
-    //     return GlassesErr.map((item,index) => { 
-    //         return (
-    //             <div key={index} className="card bg-white mr-4 mb-3" style={{border: "1px solid black",width:"100px", height:"50px",justifyContent:"center"}}>
-    //                     <a href="#" type=''><img src={item.url} alt="" style={{width:"100%"}}/></a>
-    //             </div>
-    //         )
-    //      })
-    //  }
     handleAddGlass = (item) => { 
         let Glasses = this.state.GlassesShow
         Glasses.forEach((item,index) => { 
@@ -37,7 +28,7 @@ export default class BannerComponent extends Component {
                 <section>
                     <div className="container" style={{position : "absolute",bottom:"20%",left:"10%"}} >
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-6" style={{overflow:"hidden"}}>
                                 <img src={ImgModel} alt="" style={{ height: "225px",position:"relative"}} />
                                 <GlasessShow  showGlass={this.state.GlassesShow}/>
                             </div>
